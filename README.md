@@ -85,3 +85,26 @@ Na versão 1.7.7 do prospector, as ferramentas utilizadas são:
 - [pycodestyle](https://pycodestyle.pycqa.org/en/latest/): Verificação de convenção de código.
 - [pyflakes](https://github.com/PyCQA/pyflakes): Verificação de erros possíveis.
 - [pylint](https://www.pylint.org/): Verificação de erros possíveis.
+
+## Segurança
+Para facilitar a verificação da segurança, utilize o [safety](https://pyup.io/safety/) e [pip-audit](https://github.com/trailofbits/pip-audit).
+
+### Safety
+- Adicionar safety
+````bash
+poetry add -D safety
+````
+- Executar safety
+````bash
+safety check
+````
+
+### Pip-Audit
+- Adicionar pip-audit
+````bash
+poetry add -D pip-audit
+````
+- Executar pip-audit
+````bash
+pip-audit
+````
