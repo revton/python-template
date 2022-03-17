@@ -1,0 +1,37 @@
+name: Integração Continua
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Realiza checkout
+        uses: actions/checkout@v2
+
+      - name: Instala Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Instala poetry
+        uses: Gr1N/setup-poetry@v4
+
+      - name: Instala dependências
+        run: make install
+
+      - name: Executa linter
+        run: make lint
+
+      - name: Executa testes
+        run: make test
+
+      - name: Executa validações de segurança
+        run: make sec
+
