@@ -65,3 +65,23 @@ Será criado a pasta /docs e o arquivo /mkdocs.yml
 ````bash
 mkdocs serve
 ````
+
+## Analise estática
+Existem muitas ferramentas para analise estática de código.
+Nesse momento estou utilizando o [prospector](https://prospector.landscape.io/en/master/).
+- Adicionar prospector
+````bash
+poetry add -D prospector
+````
+- Executar analise estática
+````bash
+prospector
+````
+Na versão 1.7.7 do prospector, as ferramentas utilizadas são:
+- [dodgy](https://github.com/landscapeio/dodgy): Verificação de informações que não deveriam estar presentes no código.
+- [mccabe](https://github.com/pycqa/mccabe): Verificação de complexidade do código.
+- [pydocstyle](http://www.pydocstyle.org/en/stable/): Verificação da convenção de docstring.
+- [profile-validator](https://prospector.landscape.io/en/master/profiles.html): Criar perfil com comportamento do prospector.
+- [pycodestyle](https://pycodestyle.pycqa.org/en/latest/): Verificação de convenção de código.
+- [pyflakes](https://github.com/PyCQA/pyflakes): Verificação de erros possíveis.
+- [pylint](https://www.pylint.org/): Verificação de erros possíveis.
