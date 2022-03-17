@@ -108,3 +108,8 @@ poetry add -D pip-audit
 ````bash
 pip-audit
 ````
+
+## Automação
+Para facilitar a automação de todo fluxo de trabalho aqui citado, ambiente, testes, formatação de código, documentação, analise estática e segurança. Usamos o [GNU MAKE](https://www.gnu.org/software/make/).
+
+Criamos o arquivo Makefile.
