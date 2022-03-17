@@ -38,3 +38,14 @@ poetry add --dev pytest
 ````bash
 pytest
 ````
+
+## Formatador de código
+Para facilitar o uso de formatadores de código, utilize o [blue](https://blue.readthedocs.io/en/latest/).
+- Adicionar blue
+````bash
+poetry add -D blue
+````
+- Executar formatador
+````bash
+blue .
+````
