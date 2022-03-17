@@ -49,3 +49,19 @@ poetry add -D blue
 ````bash
 blue .
 ````
+
+## Documentação
+Para facilitar o uso de documentação, utilize o [MkDocs](https://www.mkdocs.org/).
+- Adicionar MkDocs
+````bash
+poetry add -D mkdocs
+````
+- Iniciar criação de documentação
+````bash
+mkdocs new .
+````
+Será criado a pasta /docs e o arquivo /mkdocs.yml
+- Iniciar servidor para visualizar a documentação
+````bash
+mkdocs serve
+````
