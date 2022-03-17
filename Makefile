@@ -8,13 +8,13 @@ format:
 	@isort .
 
 lint:
-	@blue --check .
-	@isort --check .
-	@prospector
+	@poetry run blue --check .
+	@poetry run isort --check .
+	@poetry run prospector
 
 test:
-	@pytest -v
+	@poetry run pytest -v
 
 sec:
-	@safety check
-	@pip-audit
+	@poetry run safety check
+	@poetry run pip-audit
