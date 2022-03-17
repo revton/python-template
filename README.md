@@ -26,3 +26,15 @@ poetry init
 ````bash
 poetry shell
 ````
+
+## Testes
+Para facilitar o uso de testes, utilize o [pytest](https://docs.pytest.org/en/latest/).
+- Adicionar pytest
+````bash
+poetry add --dev pytest
+````
+- Criar pasta de testes
+- Executar os testes
+````bash
+pytest
+````
