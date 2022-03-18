@@ -3,9 +3,7 @@
 </h1>
 <h4 align="center">Template de projeto python</h4>
 
-<div align="center">
-    ![Integração Continua workflow](https://github.com/revton/python-template/actions/workflows/ci.yml/badge.svg)
-</div>
+![workflow ci](https://github.com/revton/python-template/actions/workflows/ci.yml/badge.svg)
 
 
 ## Gerenciar versões Python
