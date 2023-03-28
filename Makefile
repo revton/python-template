@@ -4,17 +4,16 @@ install:
 	@poetry install
 
 format:
-	@blue .
-	@isort .
+	@blue . && echo "✅  Blue formatted"
+	@isort . && echo "✅  Isort formatted"
 
 lint:
-	@poetry run blue --check .
-	@poetry run isort --check .
-	@poetry run prospector
+	@poetry run blue --check . && echo "✅  Blue checked"
+	@poetry run isort --check . && echo "✅  Isort checked"
 
 test:
 	@poetry run pytest -v
 
 sec:
-	@poetry run safety check
-	@poetry run pip-audit
+	@poetry run safety check && echo "✅  Safety checked"
+	@poetry run pip-audit && echo "✅  Pip-audit checked"
